@@ -35,7 +35,7 @@ const Contact: React.FC = () => {
             </a>
 
             {/* WhatsApp Card */}
-            <a href="https://wa.me/971568152689" target="_blank" rel="noopener noreferrer" className="contact-card brutalist-border brutalist-shadow brutalist-interactive reveal-up delay-200">
+            <a href="https://wa.me/971558325749" target="_blank" rel="noopener noreferrer" className="contact-card brutalist-border brutalist-shadow brutalist-interactive reveal-up delay-200">
               <div className="contact-card-icon brutalist-border">
                 <WhatsAppIcon />
               </div>

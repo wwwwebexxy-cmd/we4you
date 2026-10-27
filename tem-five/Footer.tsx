@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
             <ul className="footer-links">
               <li><a href="tel:+971568152689">+971 56 815 2689</a></li>
               <li><a href="tel:+971558325749">+971 55 832 5749</a></li>
-              <li><a href="https://wa.me/971568152689" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+              <li><a href="https://wa.me/971558325749" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
               <li>
                 <a
                   className="footer-social-link"

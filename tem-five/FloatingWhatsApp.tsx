@@ -11,7 +11,7 @@ const FloatingWhatsApp: React.FC = () => {
   return (
     <a
       className="floating-whatsapp"
-      href="https://wa.me/971568152689"
+      href="https://wa.me/971558325749"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat with WE4YOU UAE on WhatsApp"
