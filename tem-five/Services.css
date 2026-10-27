@@ -1,5 +1,6 @@
 .services-section {
-  background-color: var(--color-gray-100);
+  background-color: var(--color-white);
+  color: var(--color-navy);
 }
 
 .services-header {
@@ -30,24 +31,17 @@
 
 .project-image-wrapper {
   overflow: hidden;
-  background-color: var(--color-white); /* White bg to help pencil sketch blend mode */
+  background-color: var(--color-gold-light);
+  border: 1px solid var(--color-gold-light);
 }
 
 /* We rely on global masonry-grid and masonry-item for layout */
-
-.project-card.large .project-image-wrapper {
-  aspect-ratio: 4/5;
-}
-
-.project-card.medium .project-image-wrapper {
-  aspect-ratio: 1/1;
-}
 
 .project-info {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  border-top: 1px solid var(--color-gray-300);
+  border-top: 2px solid var(--color-gold);
   padding-top: 1rem;
 }
 
@@ -58,8 +52,43 @@
 
 .project-area {
   font-size: 0.875rem;
-  color: var(--color-gray-500);
+  color: var(--color-gold);
+  font-weight: 700;
   font-family: var(--font-body);
+}
+
+.project-description {
+  max-width: 46rem;
+  color: var(--color-gray-600);
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.project-details {
+  display: grid;
+  gap: 0.45rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.project-details li {
+  position: relative;
+  padding-left: 1rem;
+  color: var(--color-navy);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.project-details li::before {
+  position: absolute;
+  top: 0.55rem;
+  left: 0;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background: var(--color-gold);
+  content: '';
 }
 
 .mt-20 {

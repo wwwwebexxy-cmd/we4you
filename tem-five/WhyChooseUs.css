@@ -20,20 +20,13 @@
   transition: transform 0.1s linear;
 }
 
-.gallery-center-text {
-  position: relative;
-  z-index: 10;
-  text-align: center;
-  mix-blend-mode: difference;
-}
-
 .polaroid {
   position: absolute;
   width: clamp(160px, 20vw, 260px);
   aspect-ratio: 5 / 6;
-  background: var(--color-white);
+  background: var(--color-gold-light);
   padding: 10px 10px 40px 10px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   top: 50%;
   left: 50%;
   transform-origin: center center;
@@ -43,10 +36,9 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: grayscale(100%);
+  filter: saturate(0.75) contrast(1.05);
 }
 
-/* Distribute polaroids in a circle */
 .p-1 { margin-top: -120px; margin-left: -100px; transform: rotate(10deg) translateY(-250px); }
 .p-2 { margin-top: -120px; margin-left: -100px; transform: rotate(70deg) translateY(-250px); }
 .p-3 { margin-top: -120px; margin-left: -100px; transform: rotate(130deg) translateY(-250px); }
@@ -54,19 +46,26 @@
 .p-5 { margin-top: -120px; margin-left: -100px; transform: rotate(250deg) translateY(-250px); }
 .p-6 { margin-top: -120px; margin-left: -100px; transform: rotate(310deg) translateY(-250px); }
 
+.gallery-center-text {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  mix-blend-mode: difference;
+}
+
 @media (max-width: 768px) {
   .studio-gallery-container {
     height: 60vh;
     min-height: 400px;
   }
-  
-  /* Keep the circle shape but reduce the radius for smaller screens */
+
   .p-1 { transform: rotate(10deg) translateY(-140px); }
   .p-2 { transform: rotate(70deg) translateY(-140px); }
   .p-3 { transform: rotate(130deg) translateY(-140px); }
   .p-4 { transform: rotate(190deg) translateY(-140px); }
   .p-5 { transform: rotate(250deg) translateY(-140px); }
   .p-6 { transform: rotate(310deg) translateY(-140px); }
+
 }
 
 /* Stats */
@@ -74,7 +73,7 @@
   display: flex;
   flex-direction: column;
   gap: clamp(2rem, 5vw, 4rem);
-  border-top: 1px solid rgba(255,255,255,0.2);
+  border-top: 1px solid rgba(201,154,61,0.55);
   padding-top: clamp(2rem, 5vw, 4rem);
 }
 
@@ -91,11 +90,11 @@
 }
 
 .stat-value {
-  color: var(--color-white);
+  color: var(--color-gold);
 }
 
 .stat-label {
-  color: var(--color-gray-400);
+  color: rgba(255, 255, 255, 0.82);
   text-transform: uppercase;
   margin-top: 1rem;
 }
@@ -108,7 +107,7 @@
 
 .trust-headline {
   margin-bottom: 4rem;
-  color: var(--color-gray-400);
+  color: var(--color-gold-light);
 }
 
 .logos-cluster {
@@ -124,7 +123,7 @@
   font-weight: 700;
   text-transform: uppercase;
   color: var(--color-white);
-  opacity: 0.5;
+  opacity: 0.75;
   transition: opacity 0.3s ease;
 }
 

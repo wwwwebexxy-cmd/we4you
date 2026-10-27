@@ -1,8 +1,8 @@
 .marquee-container {
   width: 100vw;
   overflow: hidden;
-  background-color: var(--color-black);
-  color: var(--color-yellow);
+  background-color: var(--color-navy);
+  color: var(--color-gold);
   padding: 1rem 0;
   display: flex;
   white-space: nowrap;
@@ -10,8 +10,8 @@
   bottom: 0;
   left: 0;
   z-index: 10;
-  border-top: var(--border-width) solid var(--color-maroon);
-  border-bottom: var(--border-width) solid var(--color-maroon);
+  border-top: 2px solid var(--color-gold);
+  border-bottom: 2px solid var(--color-gold);
 }
 
 .marquee-content {

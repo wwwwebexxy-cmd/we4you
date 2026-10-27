@@ -39,9 +39,9 @@
   aspect-ratio: 4/5;
 }
 
-.project-card.medium .project-image-wrapper {
+/* .project-card.medium .project-image-wrapper {
   aspect-ratio: 1/1;
-}
+} */
 
 .project-info {
   display: flex;

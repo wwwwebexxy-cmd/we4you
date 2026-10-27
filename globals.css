@@ -1,18 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
 :root {
-  /* Strictly Monochromatic Color Palette */
+  /* WE4YOU UAE palette: navy, gold and clean white, with service accents. */
   --color-white: #ffffff;
-  --color-black: #080808;
-  --color-gray-100: #f3f4f6;
-  --color-gray-200: #e5e7eb;
-  --color-gray-300: #d1d5db;
-  --color-gray-400: #9ca3af;
-  --color-gray-500: #6b7280;
-  --color-gray-600: #4b5563;
-  --color-gray-700: #374151;
-  --color-gray-800: #1f2937;
-  --color-gray-900: #111827;
+  --color-navy: #071d41;
+  --color-navy-deep: #04142f;
+  --color-gold: #c99a3d;
+  --color-gold-light: #f5e8c7;
+  --color-blue: #2f6b9e;
+  --color-green: #4f914e;
+  --color-purple: #68429a;
+  --color-sand: #fbf8f0;
+  --color-black: var(--color-navy-deep);
+  --color-gray-100: #f2f5f8;
+  --color-gray-200: #dfe5ec;
+  --color-gray-300: #c6d0dc;
+  --color-gray-400: #a7b3c2;
+  --color-gray-500: #65748a;
+  --color-gray-600: #43546b;
+  --color-gray-700: #2d405a;
+  --color-gray-800: #172c4b;
+  --color-gray-900: var(--color-navy-deep);
   
   /* Typography */
   /* Using system UI and Inter/Space Grotesk stack for brutalist yet elegant feel */
@@ -39,6 +47,11 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: var(--color-gold);
+  color: var(--color-navy-deep);
 }
 
 /* Typography Scale */
@@ -125,25 +138,22 @@ section {
 }
 
 .pencil-sketch {
-  filter: grayscale(100%) contrast(150%) brightness(110%);
-  mix-blend-mode: multiply;
+  filter: saturate(0.75) contrast(1.05);
   transition: var(--transition-smooth);
 }
 
 .pencil-sketch:hover {
-  filter: grayscale(0%) contrast(100%) brightness(100%);
-  mix-blend-mode: normal;
+  filter: saturate(1) contrast(1.05);
 }
 
 /* Dark Mode Transition Classes */
 .theme-dark {
-  background-color: var(--color-black);
+  background-color: var(--color-navy);
   color: var(--color-white);
 }
 
 .theme-dark .pencil-sketch {
-  mix-blend-mode: screen;
-  filter: grayscale(100%) contrast(120%) brightness(80%) invert(1);
+  filter: saturate(0.7) contrast(1.05) brightness(0.82);
 }
 
 /* Animations */

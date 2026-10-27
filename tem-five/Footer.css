@@ -1,12 +1,12 @@
 .footer-section {
-  background-color: var(--color-white);
-  color: var(--color-black);
+  background-color: var(--color-sand);
+  color: var(--color-navy);
   padding-top: var(--spacing-section);
   overflow: hidden;
 }
 
 .footer-grid {
-  border-top: 2px solid var(--color-black);
+  border-top: 2px solid var(--color-gold);
   padding-top: 4rem;
   padding-bottom: 4rem;
   /* Override global grid slightly for tight footer layout if needed */
@@ -29,7 +29,7 @@
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
-  color: var(--color-gray-500);
+  color: var(--color-gold);
 }
 
 .footer-links {
@@ -44,7 +44,7 @@
 
 .footer-links a {
   text-decoration: none;
-  color: var(--color-black);
+  color: var(--color-navy);
   font-size: 1rem;
   font-weight: 500;
   transition: opacity 0.3s ease;
@@ -54,10 +54,22 @@
   opacity: 0.5;
 }
 
+.footer-social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-social-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--color-gold);
+}
+
 .footer-text {
   font-size: 1rem;
   line-height: 1.5;
-  color: var(--color-black);
+  color: var(--color-navy);
 }
 
 .footer-legal {
@@ -76,7 +88,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid var(--color-gray-200);
+  border-top: 1px solid var(--color-gold-light);
+  padding: 2rem var(--spacing-container) 0;
+}
+
+.footer-logo {
+  display: block;
+  width: min(720px, 90vw);
+  height: auto;
 }
 
 .footer-massive-brand {
@@ -84,7 +103,7 @@
   line-height: 0.75;
   font-weight: 700;
   letter-spacing: -0.05em;
-  color: var(--color-black);
+  color: var(--color-navy);
   text-align: center;
   margin: 0;
   padding: 0;

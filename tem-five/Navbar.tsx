@@ -21,11 +21,10 @@ const Navbar: React.FC = () => {
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container">
-        {/* We leave the brand area empty here because it goes in the hero bottom left as per prompt, 
-            or we can put a small version here that appears on scroll. For now, strictly follow prompt: 
-            Minimalist header with small, discreet links tucked into the top right corner. */}
         <div className="nav-brand">
-          <a href="#home">NEXUS</a>
+          <a href="#home" aria-label="WE4YOU UAE home">
+            <img className="nav-logo" src="/assets/we4you-uae-logo.webp" alt="WE4YOU UAE" />
+          </a>
         </div>
 
         <button
@@ -41,7 +40,9 @@ const Navbar: React.FC = () => {
         <ul className={`nav-links ${isMobileMenuOpen ? 'active' : ''}`}>
           <li><a href="#home" onClick={() => setIsMobileMenuOpen(false)}>Home</a></li>
           <li><a href="#about" onClick={() => setIsMobileMenuOpen(false)}>About</a></li>
-          <li><a href="#work" onClick={() => setIsMobileMenuOpen(false)}>Products</a></li>
+          <li><a href="#services" onClick={() => setIsMobileMenuOpen(false)}>Services</a></li>
+          <li><a href="#license" onClick={() => setIsMobileMenuOpen(false)}>License</a></li>
+          <li><a href="#why-us" onClick={() => setIsMobileMenuOpen(false)}>Why Us</a></li>
           <li><a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>Contact</a></li>
         </ul>
       </div>

@@ -5,43 +5,41 @@ import './Services.css';
 const projects = [
   {
     id: 1,
-    name: 'Quantum X Laptop',
-    area: '$1,899',
-    image: 'https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=1000&auto=format&fit=crop',
+    name: 'Printing & Printing Solutions',
+    area: 'Print',
+    image: '/assets/service-printing.webp',
+    description: 'Professional printing support for business materials, campaigns and everyday operations.',
+    details: ['Printing services', 'Ink and printing materials', 'Printing equipment and instruments'],
     size: 'large'
   },
   {
     id: 2,
-    name: 'Auralis Pro Earbuds',
-    area: '$249',
-    image: 'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?q=80&w=1000&auto=format&fit=crop',
+    name: 'Trading, Import & Export',
+    area: 'Trade',
+    image: '/assets/service-trading.webp',
+    description: 'Reliable sourcing and movement of products across mobile, electronics and general trading categories.',
+    details: ['Mobile phones trading', 'Import and export', 'General trading and spare parts'],
     size: 'medium'
   },
   {
     id: 3,
-    name: 'Nova Smartwatch',
-    area: '$399',
-    image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1000&auto=format&fit=crop',
-    size: 'medium'
-  },
-  {
-    id: 4,
-    name: 'Visionary Monitor',
-    area: '$899',
-    image: 'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?q=80&w=1000&auto=format&fit=crop',
+    name: 'Digital Solutions',
+    area: 'Digital',
+    image: '/assets/service-digital.webp',
+    description: 'Digital services that help businesses present, sell and grow across modern online channels.',
+    details: ['E-commerce', 'Multimedia development', 'Web design and digital content'],
     size: 'large'
   }
 ];
 
 const Services: React.FC = () => {
   return (
-    <section id="work" className="services-section py-section">
+    <section id="services" className="services-section py-section">
       <div className="container">
         <div className="services-header reveal-up">
-          <h2 className="title-large">Featured Products</h2>
+          <h2 className="title-large">Our Solutions</h2>
           <p className="text-lead services-desc">
-            Technical precision meets cutting-edge innovation. 
-            A curation of devices defined by performance.
+            One trusted partner for printing, trading and digital solutions that help your business move forward.
           </p>
         </div>
 
@@ -60,6 +58,10 @@ const Services: React.FC = () => {
                   <h4 className="project-name">{project.name}</h4>
                   <span className="project-area">{project.area}</span>
                 </div>
+                <p className="project-description">{project.description}</p>
+                <ul className="project-details">
+                  {project.details.map((detail) => <li key={detail}>{detail}</li>)}
+                </ul>
               </div>
             </div>
           ))}

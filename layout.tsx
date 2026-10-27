@@ -3,8 +3,8 @@ import "./globals.css";
 import FloatingBackButton from "@/components/FloatingBackButton";
 
 export const metadata: Metadata = {
-  title: "Retro-Modern Electrical Shop",
-  description: "Power the Unseen with our master electricians.",
+  title: "WE4YOU UAE | Trading, Printing & Digital Solutions",
+  description: "Your trusted partner for trading, printing and digital solutions in the UAE.",
 };
 
 export default function RootLayout({

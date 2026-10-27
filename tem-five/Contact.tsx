@@ -18,30 +18,30 @@ const Contact: React.FC = () => {
   return (
     <section id="contact" className="contact-section">
       <div className="container">
-        <h2 className="contact-title reveal-up">JOIN THE EXPEDITION</h2>
+        <h2 className="contact-title reveal-up">LET&apos;S WORK TOGETHER</h2>
 
         <div className="contact-grid">
           <div className="contact-left">
 
             {/* Phone Card */}
-            <a href="tel:+1234567890" className="contact-card brutalist-border brutalist-shadow brutalist-interactive reveal-up delay-100">
+            <a href="tel:+971568152689" className="contact-card brutalist-border brutalist-shadow brutalist-interactive reveal-up delay-100">
               <div className="contact-card-icon brutalist-border">
                 <PhoneIcon />
               </div>
               <div className="contact-card-content">
                 <h4>CALL US DIRECTLY</h4>
-                <p>+1 (234) 567-890</p>
+                <p>+971 56 815 2689</p>
               </div>
             </a>
 
             {/* WhatsApp Card */}
-            <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="contact-card brutalist-border brutalist-shadow brutalist-interactive reveal-up delay-200">
+            <a href="https://wa.me/971568152689" target="_blank" rel="noopener noreferrer" className="contact-card brutalist-border brutalist-shadow brutalist-interactive reveal-up delay-200">
               <div className="contact-card-icon brutalist-border">
                 <WhatsAppIcon />
               </div>
               <div className="contact-card-content">
                 <h4>WHATSAPP US</h4>
-                <p>Fast replies 24/7</p>
+                <p>Message us on WhatsApp</p>
               </div>
             </a>
 
@@ -52,7 +52,7 @@ const Contact: React.FC = () => {
               </div>
               <div className="contact-card-content">
                 <h4>WORKING HOURS</h4>
-                <p>Mon-Fri: 8AM - 6PM<br />Sat-Sun: Emergency Only</p>
+                <p>Quality products<br />Trusted service</p>
               </div>
             </div>
 
@@ -60,10 +60,9 @@ const Contact: React.FC = () => {
 
           <div className="contact-right">
             <div className="map-container brutalist-border brutalist-shadow reveal-up delay-400">
-              {/* Google Maps Embed using a placeholder location */}
               <iframe
                 className="map-iframe"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1m3!1d193595.15830869428!2d-74.119763973046!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1718820000000!5m2!1sen!2sus"
+                src="https://www.google.com/maps?q=United+Arab+Emirates&output=embed"
                 allowFullScreen={false}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade">
