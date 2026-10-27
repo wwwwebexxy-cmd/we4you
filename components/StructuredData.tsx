@@ -7,6 +7,7 @@ const structuredData = {
   "@graph": [
     {
       "@type": ["Organization", "LocalBusiness"],
+      "@id": `${siteUrl}/#organization`,
       name: "WE4YOU UAE",
       legalName: "WE4YOU FZE LLC",
       description:
