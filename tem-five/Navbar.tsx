@@ -41,7 +41,6 @@ const Navbar: React.FC = () => {
           <li><a href="#home" onClick={() => setIsMobileMenuOpen(false)}>Home</a></li>
           <li><a href="#about" onClick={() => setIsMobileMenuOpen(false)}>About</a></li>
           <li><a href="#services" onClick={() => setIsMobileMenuOpen(false)}>Services</a></li>
-          <li><a href="#license" onClick={() => setIsMobileMenuOpen(false)}>License</a></li>
           <li><a href="#why-us" onClick={() => setIsMobileMenuOpen(false)}>Why Us</a></li>
           <li><a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>Contact</a></li>
         </ul>

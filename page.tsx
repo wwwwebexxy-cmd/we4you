@@ -2,7 +2,6 @@ import React from 'react'
 import Navbar from '@/tem-five/Navbar'
 import Hero from '@/tem-five/Hero'
 import About from '@/tem-five/About'
-import TradeLicense from '@/tem-five/TradeLicense'
 import Services from '@/tem-five/Services'
 import WhyChooseUs from '@/tem-five/WhyChooseUs'
 import LocationMap from '@/tem-five/LocationMap'
@@ -16,7 +15,6 @@ export default function Home() {
       <Navbar />
       <Hero />
       <About />
-      <TradeLicense />
       <Services />
       <WhyChooseUs />
       <LocationMap />
