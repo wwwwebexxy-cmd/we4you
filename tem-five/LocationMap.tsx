@@ -14,7 +14,7 @@ const LocationMap: React.FC = () => {
             <h2 className="title-large">Visit Our Office</h2>
           </div>
           <div className="location-map-copy">
-            <p className="text-lead">Amber Gem Tower, Al Rashidiya 3, Ajman, United Arab Emirates.</p>
+            <p className="text-lead">CWS-1V-226389, 26th FLOOR, AMBER GEM TOWER, AJMAN</p>
             <a className="location-map-link" href={locationLink} target="_blank" rel="noopener noreferrer">
               Open in Google Maps <span aria-hidden="true">↗</span>
             </a>
