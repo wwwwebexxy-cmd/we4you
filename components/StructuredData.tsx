@@ -85,6 +85,18 @@ const structuredData = {
           name: "Digital Solutions",
           description: "E-commerce, multimedia development, web design and digital content services.",
         },
+        {
+          "@type": "ListItem",
+          position: 4,
+          name: "Ink and Printing Material",
+          description: "Ink, toner, paper rolls and printing materials for business and production needs.",
+        },
+        {
+          "@type": "ListItem",
+          position: 5,
+          name: "Electrical and Electronics Applications Spare Parts Trading",
+          description: "Trading and sourcing support for electrical and electronics application spare parts.",
+        },
       ],
     },
   ],

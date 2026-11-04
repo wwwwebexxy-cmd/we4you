@@ -29,6 +29,24 @@ const projects = [
     description: 'Digital services that help businesses present, sell and grow across modern online channels.',
     details: ['E-commerce', 'Multimedia development', 'Web design and digital content'],
     size: 'large'
+  },
+  {
+    id: 4,
+    name: 'Ink and Printing Material',
+    area: 'Printing Supply',
+    image: '/assets/service-ink-printing-material.png',
+    description: 'Reliable sourcing of ink, toner, paper rolls and printing materials for business and production needs.',
+    details: ['Ink and printing material', 'Toner and cartridge supply', 'Paper and printing consumables'],
+    size: 'medium'
+  },
+  {
+    id: 5,
+    name: 'Electrical and Electronics Applications Spare Parts Trading',
+    area: 'Electrical Supply',
+    image: '/assets/service-electrical-spare-parts.png',
+    description: 'Practical trading and sourcing support for electrical and electronics application spare parts.',
+    details: ['Electrical components', 'Electronics application parts', 'Spare parts trading'],
+    size: 'medium'
   }
 ];
 
