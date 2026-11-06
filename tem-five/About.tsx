@@ -32,7 +32,7 @@ const About: React.FC = () => {
         <div className="about-grid mt-20">
           <div className="about-block reveal-up delay-100">
             <p className="text-lead">
-              WE4YOU UAE brings quality products and dependable service together under one roof for businesses and customers across the UAE.
+              WE4YOU FZE LLC UAE brings quality products and dependable service together under one roof for businesses and customers across the UAE.
             </p>
           </div>
           
